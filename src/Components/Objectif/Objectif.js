@@ -3,12 +3,15 @@ import React, {useState} from 'react'
 import './Objectif.css';
 
 function Objectif(props) {
-    const [rotateAngle] = useState(Math.floor(Math.random() * 360));
+    const num_blobs = 8;
+
+    const [randomBlob] = useState(Math.floor(Math.random() * num_blobs));
+    const blob_name = "/images/blobs/" + randomBlob + ".svg";
 
     return (
         <div className="objectif">
-            <div className="blob" style={{transform: 'rotate(' + rotateAngle + 'deg)'}}>
-                <div className="num" style={{transform: 'rotate(' + (-rotateAngle) + 'deg)'}}>{props.num}</div>
+            <div className="blob" style={{backgroundImage: 'url(' + blob_name + ')'}}>
+                <div className="num">{props.num}</div>
             </div>
             <div className="objectif_texte">
                 <span>{props.children}</span>

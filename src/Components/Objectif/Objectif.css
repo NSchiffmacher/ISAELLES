@@ -7,11 +7,15 @@
     width: 6rem;
     height: 6rem;
 
-    background-image: url("../../../public/images/objectif_blob.svg");
 
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 1s;
+}
+
+.objectif .blob:hover{
+    transform: rotate(2turn) !important;
 }
 
 .objectif .blob .num {

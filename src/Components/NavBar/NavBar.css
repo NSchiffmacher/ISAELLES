@@ -1,7 +1,7 @@
 header {
     padding: 1rem 1.5rem;
 
-    height: 6rem; 
+    height: 4.5rem; 
     width: 100%; 
     
     display: flex;
@@ -10,7 +10,7 @@ header {
 }
 
 div.nav_logo {
-    background-image: url("../../../public/images/logo_isaelles.jpeg");
+    background-image: url("../../../public/images/logo_isaelles.svg");
     background-size: auto 100%;
     background-repeat:no-repeat;
     height: 100%;

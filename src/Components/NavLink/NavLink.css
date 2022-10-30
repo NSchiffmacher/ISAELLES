@@ -1,0 +1,5 @@
+div.nav_link {
+    display: flex;
+
+    font-weight: bold;
+}

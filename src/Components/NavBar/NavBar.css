@@ -1,0 +1,26 @@
+header {
+    padding: 1rem 1.5rem;
+
+    height: 6rem; 
+    width: 100%; 
+    
+    display: flex;
+
+    border-bottom: 1px solid red;
+}
+
+div.nav_logo {
+    background-image: url("../../../public/images/logo_isaelles.jpeg");
+    background-size: auto 100%;
+    background-repeat:no-repeat;
+    height: 100%;
+    width: 20%;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

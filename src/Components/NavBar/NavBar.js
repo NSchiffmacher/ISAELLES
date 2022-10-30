@@ -11,7 +11,7 @@ function NavBar(){
             
         </div>
         <nav>
-            <NavLink>Qui sommes-nous ?</NavLink>
+            <NavLink href="who">Qui sommes-nous ?</NavLink>
             <NavLink>Nos actions</NavLink>
             <NavLink>Actualités</NavLink>
             <NavLink>Nous contacter</NavLink>

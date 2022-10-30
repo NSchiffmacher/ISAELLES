@@ -1,25 +1,25 @@
 header {
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
 
     height: 4.5rem; 
     width: 100%; 
     
     display: flex;
-
-    border-bottom: 1px solid red;
+    align-items: center;
 }
 
 div.nav_logo {
-    background-image: url("../../../public/images/logo_isaelles.svg");
+    background: url("../../../public/images/logo_isaelles.svg") no-repeat center;
     background-size: auto 100%;
-    background-repeat:no-repeat;
-    height: 100%;
-    width: 20%;
+    height: 2.5rem;
+    
+    display: flex;
+    flex: 0.2;
 }
 
 nav {
     display: flex;
-    flex: 1;
+    flex: 0.8;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;

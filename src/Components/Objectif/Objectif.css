@@ -1,0 +1,38 @@
+.objectif {
+    display: flex;
+}
+
+.objectif .blob {
+
+    width: 6rem;
+    height: 6rem;
+
+    background-image: url("../../../public/images/objectif_blob.svg");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objectif .blob .num {
+    z-index: 1;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.objectif .objectif_texte {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1rem;
+
+}
+
+.objectif .objectif_texte span {
+    text-align: center;
+    color: var(--isaelles-deep-blue);
+    font-size: 1.2rem;
+}

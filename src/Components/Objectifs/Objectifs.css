@@ -1,0 +1,54 @@
+.objectifs {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--isaelles-light-blue);
+
+    padding: 3rem 0;
+}
+
+.objectifs .left {
+    flex: 0.55;
+    margin: 0 2.5rem;
+}
+
+.objectifs .left p {
+    margin: 0;
+    padding: 0;
+
+    font-style: italic;
+    text-align: justify;
+
+    color: var(--isaelles-deep-blue);
+
+    font-size: 1.1rem;
+}
+
+.objectifs .left h3 {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+.objectifs .right {
+    flex: 0.45;
+    display: flex;
+    flex-direction: column;
+}
+
+.objectifs .right img {
+    flex-basis: 0px;
+    flex-grow: 1;
+    overflow: hidden;
+    width: 100%;
+    object-fit: contain;
+}
+
+.objectifs_liste {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    margin: 0 auto;
+}
+

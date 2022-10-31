@@ -1,11 +1,28 @@
+.navbar {
+    --navbar-height: 4.5rem;
+}
+
 header {
     padding: 0 1.5rem;
 
-    height: 4.5rem; 
+    height: var(--navbar-height); 
     width: 100%; 
     
     display: flex;
     align-items: center;
+    
+    position: fixed;
+    top: 0;
+
+    background-color: white;
+    z-index: 100;
+
+    border-bottom: solid var(--isaelles-deep-blue-transparent) 1px;
+}
+
+.header_spacer {
+    display: block;
+    height: var(--navbar-height);
 }
 
 div.nav_logo {

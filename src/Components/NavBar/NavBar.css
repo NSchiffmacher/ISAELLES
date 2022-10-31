@@ -18,6 +18,7 @@ header {
     z-index: 100;
 
     border-bottom: solid var(--isaelles-deep-blue-transparent) 1px;
+    box-shadow: rgba(33, 35, 38, 0.25) 0px 10px 10px -10px;
 }
 
 .header_spacer {

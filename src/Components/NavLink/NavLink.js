@@ -7,8 +7,7 @@ function NavLink(props){
     const navigate = useNavigate();
     let target_url = props.href;
 
-    
-    return (<div onClick={ (e) => navigate(target_url)} className="nav_link">{ props.children }</div>);
+    return (<div onClick={ (e) => navigate(target_url)} className={"nav_link " + (props.hidden_on_phone ? "hidden_mobile" : "")}>{ props.children }</div>);
 }
 
 export default NavLink;

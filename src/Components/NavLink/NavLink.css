@@ -16,6 +16,10 @@ div.nav_link {
 
 /* Phone */
 @media only screen and (max-width: 768px) {
+    .nav_link.hidden_mobile {
+        display: none;
+    }
+
     div.nav_link {
         font-size: 1.05rem;
     }

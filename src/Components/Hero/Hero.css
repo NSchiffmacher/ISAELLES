@@ -23,6 +23,12 @@
 
     z-index: 1;
 }
+.hero .hero_inner_transition{
+    transition: transform 0.15s ease-in-out;
+}
+.hero .hero_inner_transition:hover  {
+    transform: scale(1.02);
+}
 
 .hero .hero_inner * {
     z-index: 1;
@@ -38,7 +44,7 @@
 
     background-color: white;
     border-radius: 50%;
-    
+
 }
 
 .hero img{

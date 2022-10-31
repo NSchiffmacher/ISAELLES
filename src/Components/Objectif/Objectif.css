@@ -3,9 +3,10 @@
 }
 
 .objectif .blob {
-
     width: 6rem;
     height: 6rem;
+
+    background-repeat: no-repeat;
 
 
     display: flex;
@@ -38,5 +39,6 @@
 .objectif .objectif_texte span {
     text-align: center;
     color: var(--isaelles-deep-blue);
+    font-weight: 500;
     font-size: 1.2rem;
 }

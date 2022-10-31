@@ -45,3 +45,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scale-5prc {
+  transition: transform 0.2s ease-in-out;
+}
+.scale-5prc:hover {
+  transform: scale(1.05);
+}
+
+.scale-2prc {
+  transition: transform 0.2s ease-in-out;
+}
+.scale-2prc:hover {
+  transform: scale(1.02);
+}

@@ -10,9 +10,9 @@ function Partners() {
         <div className="partenaires">
             <h3>NOS PARTENAIRES</h3>
             <div className="partners_logo">
-                <div className="image_container"><div className="partner_logo"><img src="/images/logo_capgemini.png" alt="logo capgemini" /></div></div>
-                <div className="image_container"><div className="partner_logo"><img src="/images/logo_fondation.svg" alt="logo fondation isae-supaero" /></div></div>
-                <div className="image_container"><div className="partner_logo"><img src="/images/logo_ose.jpeg" alt="logo ose isae" /></div></div>
+                <div className="image_container"><div className="partner_logo"><img className="scale-2prc" src="/images/logo_capgemini.png" alt="logo capgemini" /></div></div>
+                <div className="image_container"><div className="partner_logo"><img className="scale-2prc" src="/images/logo_fondation.svg" alt="logo fondation isae-supaero" /></div></div>
+                <div className="image_container"><div className="partner_logo"><img className="scale-2prc" src="/images/logo_ose.jpeg" alt="logo ose isae" /></div></div>
             </div>
         </div>
         <div className="etablissements_partenaires">

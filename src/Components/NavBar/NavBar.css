@@ -45,14 +45,14 @@ nav {
 
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-    /* div.nav_logo {
+    div.nav_logo {
         display: none;
     }
 
     nav {
         flex: 1;
         justify-content: space-between;
-    } */
+    }
 }
 
 /* Phone */

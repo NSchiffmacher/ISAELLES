@@ -1,0 +1,43 @@
+.partners h3 {
+    margin-left: 10rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.partners_logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    margin: 1rem 5rem 3rem 5rem;
+}
+
+.partners_logo .image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner_logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .partners h3 {
+        margin-left: 4rem;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .partners h3 {
+        margin-left: 2rem;
+    }
+
+    .partners_logo {
+        grid-template-columns: 1fr;
+        margin-bottom: 5rem;
+    }
+}

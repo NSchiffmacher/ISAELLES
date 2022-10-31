@@ -3,12 +3,13 @@
     flex-direction: row;
     background-color: var(--isaelles-light-blue);
 
-    padding: 3rem 0;
+    padding: 1.5rem 0;
 }
 
 .objectifs .left {
     flex: 0.55;
     margin: 0 2.5rem;
+    padding: 1.5rem 0;
 }
 
 .objectifs .left p {

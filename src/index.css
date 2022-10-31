@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
 
 body {
   --isaelles-deep-blue: #2b2171;
@@ -6,8 +6,8 @@ body {
   --isaelles-magenta: #a25ca1;
   --isaelles-pink: #e71e80;
 
-  --isaelles-light-blue: #d6e2fa;
   --isaelles-cameo-pink: #e8b9cf;
+  --isaelles-light-blue: #d6e2fa;
 
 
   margin: 0;

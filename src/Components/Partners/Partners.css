@@ -19,8 +19,8 @@
 .partners_logo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem;
-    margin: 1rem 5rem 3rem 5rem;
+    grid-gap: 8rem;
+    margin: 1rem 10rem 3rem 10rem;
 }
 
 .partners_logo .image_container {
@@ -53,6 +53,8 @@
         margin-top: 2rem;
         margin-bottom: 4rem;
         grid-gap: 6rem;
+        margin: 1rem 5rem 3rem 5rem;
+
     }
 
     .partners .partners_logo {

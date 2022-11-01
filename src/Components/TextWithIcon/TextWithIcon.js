@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Contact.css';
+import './TextWithIcon.css';
 
-function Contact() {
+function TextWithIcon() {
   return (
     <div className="contact">
         Contact
@@ -10,4 +10,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default TextWithIcon

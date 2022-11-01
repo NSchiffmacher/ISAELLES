@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Contact from '../Contact/Contact';
+import TextWithIcon from '../TextWithIcon/TextWithIcon';
 
 import './ContactsSection.css';
 
@@ -11,9 +11,9 @@ function ContactsSection() {
             <img src="/images/logo_isaelles.svg" alt="isaelles logo" />
         </div>
         <div className="contacts">
-            <Contact href="" icon="yep" color="var(--isaelles-deep-blue)">@asso.isaelles</Contact>
-            <Contact href="" icon="yep" color="var(--isaelles-magenta)">@isaelles</Contact>
-            <Contact href="" icon="yep" color="var(--isaelles-deep-blue)">@ISAElles</Contact>
+            <TextWithIcon href="" icon="yep" className="">@asso.isaelles</TextWithIcon>
+            <TextWithIcon href="" icon="yep" className="">@isaelles</TextWithIcon>
+            <TextWithIcon href="" icon="yep" className="">@ISAElles</TextWithIcon>
         </div>
     </div>
   )

@@ -1,12 +1,19 @@
 .partners {
-    padding-top: 1rem;
+    padding-top: 2.5rem;
     /* background-color: #f7eaf0; */
 }
 
 .partners h3 {
     margin-left: 10rem;
+    margin-bottom: 2rem;
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+.partners .partners_logo {
+    --partners-logo-margin: 9rem;
+    margin-top: var(--partners-logo-margin);
+    margin-bottom: var(--partners-logo-margin);
 }
 
 .partners_logo {
@@ -44,7 +51,11 @@
     .partners_logo {
         grid-template-columns: 1fr;
         margin-top: 2rem;
-        grid-gap: 3rem;
         margin-bottom: 4rem;
+        grid-gap: 6rem;
+    }
+
+    .partners .partners_logo {
+        --partners-logo-margin: 6rem;
     }
 }

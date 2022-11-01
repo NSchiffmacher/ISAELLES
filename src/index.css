@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
 
+html {
+  font-size: 16px;
+}
+@media only screen and (min-width: 1250px){
+  html {
+    font-size: 13px;
+  }
+}
+
 body {
   --isaelles-deep-blue: #2b2171;
   --isaelles-deep-blue-transparent: #2b217130;

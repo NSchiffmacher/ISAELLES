@@ -10,10 +10,7 @@
 .text_with_icon .text_with_icon_img {
     height: 2em;
     width: auto;
-    margin-right: 0.5em;
-
-    /* height: auto;
-    width: 2rem; */
+    margin-right: 0.75em;
 }
 
 

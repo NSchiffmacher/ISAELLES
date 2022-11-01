@@ -77,7 +77,7 @@
     .hero .hero_logo {
         max-width: fit-content;
     }
-}
+}   
 
 @-moz-document url-prefix() {
     .hero .hero_logo {

@@ -8,7 +8,6 @@ function PartnerEstablishments(props) {
     const [is_phone] = useState(
         window.innerWidth < 768 ? true : false
       );
-    console.log(window.innerWidth, is_phone);
 
     props.children.forEach((establishment, index) => {
         const key = `partner_establishment_li_${index}`;

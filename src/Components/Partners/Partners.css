@@ -13,11 +13,12 @@
 .partners .partners_logo {
     --partners-logo-margin: 9rem;
     margin: var(--partners-logo-margin) auto var(--partners-logo-margin);
+
+    width: 90%;
     max-width: 85rem;
 }
 
 .partners_logo {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 9rem;

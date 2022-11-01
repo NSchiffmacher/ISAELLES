@@ -11,9 +11,9 @@ function ContactsSection() {
             <img src="/images/logo_isaelles.svg" alt="isaelles logo" />
         </div>
         <div className="contacts">
-            <TextWithIcon href="" icon="yep" className="">@asso.isaelles</TextWithIcon>
-            <TextWithIcon href="" icon="yep" className="">@isaelles</TextWithIcon>
-            <TextWithIcon href="" icon="yep" className="">@ISAElles</TextWithIcon>
+            <TextWithIcon href="https://www.facebook.com/asso.isaelles" icon="/images/contacts_logo/facebook.png" className="contact contact_facebook">@asso.isaelles</TextWithIcon>
+            <TextWithIcon href="https://twitter.com/isaelles" icon="/images/contacts_logo/twitter.svg" className="contact contact_twitter">@isaelles</TextWithIcon>
+            <TextWithIcon href="https://www.linkedin.com/company/isaelles" icon="/images/contacts_logo/linkedin.png" className="contact contact_linkedin">@ISAElles</TextWithIcon>
         </div>
     </div>
   )

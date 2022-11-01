@@ -1,4 +1,20 @@
+.text_with_icon {
+    display: flex;
+    align-items: center;
+}
 
+.text_with_icon_link:hover {
+    cursor: pointer;
+}
+
+.text_with_icon .text_with_icon_img {
+    height: 2em;
+    width: auto;
+    margin-right: 0.5em;
+
+    /* height: auto;
+    width: 2rem; */
+}
 
 
 /* Tablets */

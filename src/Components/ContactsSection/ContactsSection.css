@@ -60,17 +60,48 @@
 
     transition: all 0.25s ease-in-out;
 }
-.contacts_section .button_contact:hover{
+.contacts_section .button_contact:hover, .contacts_section .button_contact:active{
     cursor: pointer;
     background-color: var(--isaelles-deep-blue);
     color: white;
 }
 
 
+/* Tablets Landscape */
+@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+    .contacts_section {
+        --contacts-font-size: 1.5rem;
+    }
+}
+
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .contacts_section {
+        --contacts-font-size: 1.25rem;
+        }
 }
 
 /* Phone */
 @media only screen and (max-width: 768px) {
+    .contacts_section {
+        --contacts-font-size: 1.25rem;
+    }
+
+    .contacts_section .contacts{
+        flex-direction: column;
+        align-items: center;
+        
+        width: 75%;
+        margin: 4rem auto 3rem auto;
+    }
+
+    .contact {
+        margin: 1rem 0;
+    }
+
+    .contact.contact_adress {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

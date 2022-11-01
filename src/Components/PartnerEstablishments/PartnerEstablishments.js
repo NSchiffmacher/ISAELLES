@@ -15,7 +15,7 @@ function PartnerEstablishments(props) {
         if (index % 2 === 0 || is_phone ){
             li_left.push(<li key={key}>{establishment}</li>)
         } else {
-            li_right.push(<li>{establishment}</li>)
+            li_right.push(<li key={key}>{establishment}</li>)
         }
     })
 

@@ -61,5 +61,6 @@
     .partners .partners_logo {
         --partners-logo-margin: 6rem;
         margin: 7rem 5rem 7rem 5rem;
+        width: unset;
     }
 }

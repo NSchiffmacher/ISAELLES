@@ -1,0 +1,28 @@
+.main_top_blob {
+    --main-top-blob: 20vw;
+    width: 20vw;
+    /* transform: rotate(20deg); */
+    top: 10vw;
+    right: 0;
+}
+
+/* Big Tablets */
+@media only screen and (min-width: 1200px) and (max-width: 1450px) {
+    .main_top_blob{
+
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .main_top_blob{
+        
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .main_top_blob{
+        
+    }
+}

@@ -1,0 +1,8 @@
+.blob_xyz {
+    position: absolute;
+}
+
+.blob_xyz .blob_image {
+    width: 100%;
+
+}

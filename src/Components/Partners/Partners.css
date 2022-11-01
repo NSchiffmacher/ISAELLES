@@ -12,14 +12,15 @@
 
 .partners .partners_logo {
     --partners-logo-margin: 9rem;
-    margin-top: var(--partners-logo-margin);
-    margin-bottom: var(--partners-logo-margin);
+    margin: var(--partners-logo-margin) auto var(--partners-logo-margin);
+    max-width: 85rem;
 }
 
 .partners_logo {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8rem;
+    grid-gap: 9rem;
     margin: 1rem 10rem 3rem 10rem;
 }
 
@@ -53,11 +54,11 @@
         margin-top: 2rem;
         margin-bottom: 4rem;
         grid-gap: 6rem;
-        margin: 1rem 5rem 3rem 5rem;
 
     }
 
     .partners .partners_logo {
         --partners-logo-margin: 6rem;
+        margin: 1rem 5rem 3rem 5rem;
     }
 }

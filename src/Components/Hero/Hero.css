@@ -37,6 +37,7 @@
 .hero .hero_inner .hero_white_background {
     position: absolute;
     width: 150%;
+    max-width: 100vw;
     height: 135%;
     left: -25%;
 
@@ -69,5 +70,17 @@
 @media only screen and (max-width: 768px) {
     .hero .hero_catch_phrase {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .hero_logo {
+        max-width: fit-content;
+    }
+}
+
+@-moz-document url-prefix() {
+    .hero .hero_logo {
+        max-width: unset;
     }
 }

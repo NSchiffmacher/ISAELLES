@@ -18,11 +18,6 @@ function HomePage(){
         <Partners />
 
         <ContactsSection />
-
-
-        <div>
-            <h3>Under nav hihi</h3>
-        </div>
     </div>);
 }
 export default HomePage;

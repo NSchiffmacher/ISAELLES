@@ -1,14 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import NavLink from '../NavLink/NavLink';
 
 import './NavBar.css';
 
 function NavBar(){
+    const navigate = useNavigate();
+
+    function returnHome(){
+        navigate('/');
+    }
 
     return (<div className="navbar">
         <header>
-            <div className="nav_logo">
+            <div onClick={ returnHome } className="nav_logo">
                 
             </div>
             <nav>

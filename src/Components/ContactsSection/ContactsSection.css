@@ -47,25 +47,6 @@
     color: white;
 }
 
-.contacts_section .button_contact {
-    display: block;
-    padding: 1.5rem 2rem;
-    margin: 4rem 0 2rem 0;
-
-    background-color: white;
-
-    color: var(--isaelles-deep-blue);
-    font-size: var(--contacts-font-size);
-    font-weight: var(--contacts-font-weight);
-
-    transition: all 0.25s ease-in-out;
-}
-.contacts_section .button_contact:hover, .contacts_section .button_contact:active{
-    cursor: pointer;
-    background-color: var(--isaelles-deep-blue);
-    color: white;
-}
-
 
 /* Tablets Landscape */
 @media only screen and (min-width: 1200px) and (max-width: 1480px) {

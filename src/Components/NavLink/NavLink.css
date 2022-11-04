@@ -5,6 +5,9 @@ div.nav_link {
     font-size: 1.2rem;
 }
 
+div.nav_link:hover {
+    cursor: pointer;
+}
 
 
 /* Tablets */

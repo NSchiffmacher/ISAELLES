@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 
 import NavBar from '../../Components/NavBar/NavBar';
+import LinkButton from '../../Components/LinkButton/LinkButton';
+
+import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
+
+import urls from '../../urls';
 
 import './WhoPage.css';
 import '../../blobs.css';
+
 
 
 function WhoPage() {
@@ -11,9 +17,10 @@ function WhoPage() {
       window.innerWidth < 768 ? true : false
     );
 
-    
   return (
     <div id="who_page" className="who_page">
+        <ScrollToTop />
+        
         <NavBar />
 
         <h3>ISAELLES, Le club féministe de l'ISAE-SUPAERO</h3>
@@ -55,6 +62,12 @@ Le club a pour but d'encourager les jeunes filles à s'orienter vers des études
                 </div>
             </div>
         </div>
+
+        { is_phone ? 
+        <div style={{ display: 'flex', justifyContent : 'center', alignItems : 'center'}}>
+            <LinkButton href={ urls.HOME_PAGE } className="who_home" >Retour à la page principale</LinkButton>
+        </div>
+        : ''}
     </div>
   )
 }

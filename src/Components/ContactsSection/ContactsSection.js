@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import TextWithIcon from '../TextWithIcon/TextWithIcon';
+import SpanButton from '../LinkButton/LinkButton';
 
+import urls from '../../urls';
 import './ContactsSection.css';
 
 function ContactsSection() {
   const navigate = useNavigate();
   const contact_click = (e) => {
     e.preventDefault();
-    navigate('/contact');
+    navigate(urls.CONTACT_PAGE);
   } 
 
   
@@ -33,7 +35,7 @@ function ContactsSection() {
         </div>
         <TextWithIcon icon="/images/contacts_logo/pinpoint.png" className="contact contact_adress">4 Avenue Edouard Belin, 31400 Toulouse, France</TextWithIcon>
         
-        <span onClick={contact_click} className="button_contact">Nous contacter</span>
+        <SpanButton href={ urls.CONTACT_PAGE }>Nous contacter</SpanButton>
     </div>
   )
 }

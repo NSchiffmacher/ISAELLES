@@ -6,14 +6,16 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Pages/HomePage/HomePage.js';
 import WhoPage from './Pages/WhoPage/WhoPage.js';
 
+import urls from './urls';
+
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path="/" element={ <HomePage /> } />
-      <Route path="/who" element={ <WhoPage /> } />
+      <Route path={ urls.HOME_PAGE } element={ <HomePage /> } />
+      <Route path={ urls.WHO_PAGE } element={ <WhoPage /> } />
     </Routes>
   </Router>
 );

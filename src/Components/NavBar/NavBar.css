@@ -34,6 +34,9 @@ div.nav_logo {
     display: flex;
     flex: 0.2;
 }
+div.nav_logo:hover {
+    cursor: pointer;
+}
 
 nav {
     display: flex;

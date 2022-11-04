@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import NavBar from '../../Components/NavBar/NavBar';
 
@@ -7,6 +7,11 @@ import '../../blobs.css';
 
 
 function WhoPage() {
+    const [is_phone] = useState(
+      window.innerWidth < 768 ? true : false
+    );
+
+    
   return (
     <div id="who_page" className="who_page">
         <NavBar />
@@ -16,10 +21,13 @@ function WhoPage() {
         <div className="who_row">
             <div className="who_col">
                 <div className="who_img">
-                    <img src="/images/logo_sup_square.png" alt="Logo ISAE-SUPAERO"/>
+                    { is_phone 
+                        ? <img src="/images/logo_sup.png" alt="Logo ISAELLES"/>
+                        : <img src="/images/logo_sup_square.png" alt="Logo ISAELLES"/>
+                    }
                 </div>
                 <div className="who_text">
-                    <p>
+                    <p className="phone_margin_top">
                     L’ISAE-SUPAERO est le leader mondial de l’enseignement supérieur dans le domaine de l’ingénierie aérospatiale.
                     </p>
                 </div>
@@ -41,7 +49,7 @@ Il regroupe de nombreux clubs dans des domaines très variés (Techniques, Évé
                     <img src="/images/logo_isaelles.svg" alt="Logo ISAELLES"/>
                 </div>
                 <div className="who_text">
-                    <p>
+                    <p className="phone_margin_top">
                     Fondé en 2015, le club ISAELLES crée du lien entre collégiennes - lycéennes et étudiant-e-s de l'Institut.
 Le club a pour but d'encourager les jeunes filles à s'orienter vers des études scientifiques et de casser les barrières mentales qu'elles peuvent avoir.                    </p>
                 </div>

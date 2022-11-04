@@ -6,6 +6,7 @@
 .who_page .who_row {
     width: 85%;
     margin: 0 auto;
+    padding-bottom: 2rem;
 
     display: flex;
     flex-direction: row;
@@ -17,7 +18,7 @@
     text-align: center;
     font-size: 1.75rem;
     font-weight: 300;
-    margin: 4rem 0;
+    margin: 3rem 0 4rem 0;
 }
 
 .who_page .who_col  {
@@ -71,6 +72,7 @@
     .who_page h3 {
         max-width: 90%;
         margin: 3rem auto;
+        font-size: 1.5rem;
     }
 
     .who_page .who_row {
@@ -90,7 +92,6 @@
 
     .who_page .who_text p {
         margin-top: 0;
-        font-size: 1.1rem;
     }
 
     .who_page .who_col:not(:last-child) {

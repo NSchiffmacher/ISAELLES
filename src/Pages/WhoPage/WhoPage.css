@@ -1,0 +1,45 @@
+.who_page {
+    background-color: var(--isaelles-light-blue);
+    min-height: 100vh;
+}
+
+.who_page .who_row {
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.who_page h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 3rem 0;
+}
+
+.who_page .who_col  {
+    flex: 1;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.who_page .who_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who_page .who_img img {
+    width: 60%;
+    aspect-ratio: 1;
+    margin-bottom: 1rem;
+}
+
+.who_page .who_text {
+    text-align: justify;
+}

@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Pages/HomePage/HomePage.js';
+import WhoPage from './Pages/WhoPage/WhoPage.js';
 
 import './index.css';
 
@@ -12,6 +13,7 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={ <HomePage /> } />
+      <Route path="/who" element={ <WhoPage /> } />
     </Routes>
   </Router>
 );

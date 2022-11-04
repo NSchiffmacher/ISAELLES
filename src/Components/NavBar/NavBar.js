@@ -12,9 +12,9 @@ function NavBar(){
                 
             </div>
             <nav>
-                <NavLink hidden_on_phone href="who">Qui sommes-nous ?</NavLink>
+                <NavLink href="who">Qui sommes-nous ?</NavLink>
                 <NavLink hidden_on_phone href="actions">Nos actions</NavLink>
-                <NavLink href="actu">Actualités</NavLink>
+                <NavLink hidden_on_phone href="actu">Actualités</NavLink>
                 <NavLink href="contact">Nous contacter</NavLink>
             </nav>
         </header>

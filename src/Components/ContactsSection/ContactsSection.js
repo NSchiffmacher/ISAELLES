@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
 
 import TextWithIcon from '../TextWithIcon/TextWithIcon';
 import SpanButton from '../LinkButton/LinkButton';
@@ -8,13 +7,6 @@ import urls from '../../urls';
 import './ContactsSection.css';
 
 function ContactsSection() {
-  const navigate = useNavigate();
-  const contact_click = (e) => {
-    e.preventDefault();
-    navigate(urls.CONTACT_PAGE);
-  } 
-
-  
   const [is_phone] = useState(
     window.innerWidth < 768 ? true : false
   );

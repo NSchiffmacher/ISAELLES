@@ -4,9 +4,9 @@ import PartnerEstablishments from '../PartnerEstablishments/PartnerEstablishment
 
 import './Partners.css';
 
-function Partners() {
+function Partners(props) {
   return (
-    <div className="partners">
+    <div ref={props.inp_ref} className="partners">
         <div className="partenaires">
             <h3>NOS PARTENAIRES</h3>
             <div className="partners_logo">

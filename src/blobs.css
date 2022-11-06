@@ -12,12 +12,27 @@
     margin-top: -18vw;
     right: 0;
 }
+.middle_right_blob {
+    width: 15vw;
+    right: 0;
+}
+.bottom_blob_1 {
+    width: 15vw;
+    margin-top: -6vw;
+}
+.middle_left_blob_1 {
+    width: 7vw;
+    margin-top: -4.5vw;
+}
 
 /* Big Tablets */
 @media only screen and (min-width: 1200px) and (max-width: 1450px) {
     .main_top_blob{
         width: 6vw;
         top: 15vw;
+    }
+    .middle_right_blob {
+        width: 11vw;
     }
 }
 
@@ -26,6 +41,9 @@
     .main_top_blob{
         width: 6vw;
         top: 15vw;
+    }
+    .middle_right_blob {
+        width: 5vw;
     }
 }
 

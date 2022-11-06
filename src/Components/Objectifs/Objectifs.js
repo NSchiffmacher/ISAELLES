@@ -3,9 +3,9 @@ import Objectif from '../Objectif/Objectif';
 
 import './Objectifs.css';
 
-function Objectifs() {
+function Objectifs(props) {
   return (
-    <div className="objectifs">
+    <div ref={ props.inp_ref } className="objectifs">
         <div className="left">
             <p>
             Créé en 2015 à l’ISAE-SUPAERO, ISAELLES regroupe les hommes et les femmes de l'ISAE (étudiant-e-s, professeur-e-s, membres du personnel, intervenant-e-s, ancien-ne-s élèves) ayant le projet commun d'encourager les collégiennes et les lycéennes à s'orienter vers des études scientifiques et plus spécifiquement vers les carrières d’ingénieurs.

@@ -1,8 +1,11 @@
 .blob_xyz {
     position: absolute;
+    user-select: none; /* Prevents the blob from being selected (not working I think) */
 }
 
 .blob_xyz .blob_image {
     width: 100%;
+    height: 100%;
+    user-select: none;
 
 }

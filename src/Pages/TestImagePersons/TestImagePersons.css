@@ -1,0 +1,7 @@
+.cletext:hover  {
+    fill: var(--isaelles-pink);
+}
+.cletext  {
+    fill: var(--isaelles-deep-blue);
+
+}

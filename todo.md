@@ -8,6 +8,7 @@
   * Fondation ISAE
   * OSE-ISAE 
 - [ ] What do we do with the white text at the bottom of the contact section
+- [ ] Border radius on the LinkButton ?
 
 ## To do
 - [ ] All different sections 

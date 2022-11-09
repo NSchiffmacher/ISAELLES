@@ -37,9 +37,9 @@ function Partners(props) {
 
     return (
         <div ref={props.inp_ref} className="partners">
-            <div className="partenaires">
+            <div className="partenaires" ref={ logos_ref }>
                 <h3>NOS PARTENAIRES</h3>
-                <div className="partners_logo" ref={ logos_ref }>
+                <div className="partners_logo">
                     {[
                         { src: '/images/logo_capgemini.png', alt: 'logo capgemini' },
                         { src: '/images/logo_fondation.png', alt: 'logo fondation' },

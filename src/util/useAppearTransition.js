@@ -9,8 +9,8 @@ const useAppearTransition = (callback, options = {}) => {
     const { ref } = useInView({
         threshold: threshold,
         onChange: (cur_inView, cur_entry) => {
-            console.log(cur_entry.intersectionRatio);
             if (cur_inView && !alreadyEntered) {
+                console.log('callback called')
                 callback();
                 setAlreadyEntered(true);
             }

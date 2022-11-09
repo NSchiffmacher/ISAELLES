@@ -13,8 +13,8 @@ function Partners(props) {
         opacity: '0',
         transition: 'transform 0.4s ease-out, opacity 0.3s ease-out'
     });
-    const base_transition_delay = 0;
-    const transition_delay = 0.1;
+    const base_transition_delay = 0.1;
+    const transition_delay = 0.2;
 
     const { 
         inViewport, 
@@ -37,9 +37,9 @@ function Partners(props) {
 
     return (
         <div ref={props.inp_ref} className="partners">
-            <div className="partenaires" ref={ logos_ref }>
+            <div className="partenaires">
                 <h3>NOS PARTENAIRES</h3>
-                <div className="partners_logo">
+                <div className="partners_logo" ref={ logos_ref }>
                     {[
                         { src: '/images/logo_capgemini.png', alt: 'logo capgemini' },
                         { src: '/images/logo_fondation.png', alt: 'logo fondation' },

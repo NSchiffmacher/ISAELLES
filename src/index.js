@@ -9,6 +9,7 @@ import WhoPage from './Pages/WhoPage/WhoPage.js';
 import urls from './urls';
 
 import './index.css';
+import TestImagePersons from './Pages/TestImagePersons/TestImagePersons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <Routes>
       <Route path={ urls.HOME_PAGE } element={ <HomePage /> } />
       <Route path={ urls.WHO_PAGE } element={ <WhoPage /> } />
+      <Route path={ "test/persons" } element={ <TestImagePersons /> } />
     </Routes>
   </Router>
 );

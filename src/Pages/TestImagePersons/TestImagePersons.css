@@ -1,0 +1,13 @@
+.cletext  {
+    fill: var(--isaelles-deep-blue);
+
+}
+.divtest:hover .cletext  {
+    fill: var(--isaelles-pink);
+}
+.divtest .cls-1 {
+    stroke:var(--isaelles-deep-blue) !important;
+}
+.divtest:hover .cls-1 {
+    stroke:var(--isaelles-pink) !important;
+}

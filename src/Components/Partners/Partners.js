@@ -1,39 +1,28 @@
-import React, { useRef, useEffect, useState } from 'react'
-import { useInViewport } from 'react-in-viewport';
+import React, { useState } from 'react'
 
 import PartnerEstablishments from '../PartnerEstablishments/PartnerEstablishments';
+
+import useAppearTransition from '../../util/useAppearTransition';
 
 import './Partners.css';
 
 function Partners(props) {
     // Code handling the linked appearance of the != logos
-    const logos_ref = useRef(null);
-    let [logos_style, set_logos_style] = useState({
+    const base_logos_style = {
         transform: 'translateY(60px)',
-        opacity: '0',
+        opacity: '0.1',
         transition: 'transform 0.4s ease-out, opacity 0.3s ease-out'
-    });
+    };
+    let [logos_style, set_logos_style] = useState(base_logos_style);
     const base_transition_delay = 0.1;
     const transition_delay = 0.2;
+    const logos_ref = useAppearTransition(() => {
+        set_logos_style({...logos_style, 
+            transform: 'translateY(0px)',
+            opacity: '1'
+        });
+    });
 
-    const { 
-        inViewport, 
-        enterCount
-    } = useInViewport(
-        logos_ref,
-        undefined, // options
-        { disconnectOnLeave: false }, // config
-        undefined // props
-    )
-
-    useEffect(() => {
-        if (inViewport && enterCount === 1) {
-            set_logos_style({...logos_style, 
-                transform: 'translateY(0px)',
-                opacity: '1'
-            });
-        }
-    }, [inViewport, enterCount, logos_style, set_logos_style])
 
     return (
         <div ref={props.inp_ref} className="partners">

@@ -9,7 +9,7 @@ function Objectif(props) {
     const blob_name = "/images/blobs/" + randomBlob + ".svg";
 
     return (
-        <div className="objectif">
+        <div className="objectif" style={ props.style }>
             <div className="blob" style={{backgroundImage: 'url(' + blob_name + ')'}}>
                 <div className="num">{props.num}</div>
             </div>

@@ -14,7 +14,7 @@ function Objectifs(props) {
 	const [image_style, set_image_style] = useState({
 		transform: 'translateX(200px) scale(0.6)',
 		opacity: 0,
-		transition: 'transform 0.4s ease-out, opacity 0.3s ease-out'
+		transition: 'transform 0.4s ease-out, opacity 0.5s ease-out'
 	});
 	const image_ref = useAppearTransition(() => {
 		set_image_style({
@@ -26,9 +26,9 @@ function Objectifs(props) {
 
 	//Animating the objectives
 	const [objectives_style, set_objectives_style] = useState({
-		transform: 'translateY(200px)',
+		transform: 'translateY(150px)',
 		opacity: 0,
-		transition: 'transform 0.4s ease-out, opacity 0.3s ease-out',
+		transition: 'transform 0.4s ease-out, opacity 0.5s ease-out',
 		transitionDelay: '0.2s'
 	});
 	const objectives_trigger_ref = useAppearTransition(() => {
@@ -47,7 +47,7 @@ function Objectifs(props) {
 				<h3 ref={ objectives_trigger_ref }>NOS OBJECTIFS</h3>
 				<div className="objectifs_liste">
 					<Objectif style={ objectives_style } num={1}>Lutter contre les stéréotypes de genre</Objectif>                
-					<Objectif style={ objectives_style } num={2}>Encourager les collégiennes et les lycéennes à s'orienter vers des études scientifiques</Objectif>                
+					<Objectif style={{...objectives_style, transitionDelay: '0.4s'} } num={2}>Encourager les collégiennes et les lycéennes à s'orienter vers des études scientifiques</Objectif>                
 				</div>
 			</div>
 			<div ref={ image_ref } className="right">

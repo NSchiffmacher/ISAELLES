@@ -9,9 +9,9 @@ import './Partners.css';
 function Partners(props) {
     // Code handling the linked appearance of the != logos
     const base_logos_style = {
-        transform: 'translateY(250px)',
+        transform: 'translateY(200px)',
         opacity: '0',
-        transition: 'transform 0.4s ease-out, opacity 0.3s ease-out'
+        transition: 'transform 0.4s ease-out, opacity 0.5s ease-out'
     };
     let [logos_style, set_logos_style] = useState(base_logos_style);
     const base_transition_delay = 0.1;

@@ -1,4 +1,5 @@
 .objectifs {
+    overflow: hidden; /* Mostly used for animations */
     display: flex;
     flex-direction: row;
     background-color: var(--isaelles-light-blue);

@@ -6,6 +6,7 @@ import PartnerEstablishments from '../PartnerEstablishments/PartnerEstablishment
 import './Partners.css';
 
 function Partners(props) {
+    // Code handling the linked appearance of the != logos
     const logos_ref = useRef(null);
     let [logos_style, set_logos_style] = useState({
         transform: 'translateY(60px)',

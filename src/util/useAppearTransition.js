@@ -9,7 +9,8 @@ const useAppearTransition = (callback, options = {}) => {
     const { ref } = useInView({
         threshold: threshold,
         onChange: (cur_inView, cur_entry) => {
-            if (cur_inView && !alreadyEntered) {
+            console.log(document.readyState)
+            if (!alreadyEntered && cur_inView && document.readyState === 'complete') {
                 console.log('callback called')
                 callback();
                 setAlreadyEntered(true);

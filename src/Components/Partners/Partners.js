@@ -21,7 +21,7 @@ function Partners(props) {
             transform: 'translateY(0px)',
             opacity: '1'
         });
-    }, {intersectionRatio: 0.2});
+    }, {threshold: 0.7});
 
 
     return (

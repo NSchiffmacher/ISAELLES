@@ -1,18 +1,21 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useInView } from 'react-intersection-observer';
 
 const useAppearTransition = (callback, options = {}) => {
-    const intersectionRatio = options.intersectionRatio | 0;
+    const threshold = options.threshold | 0;
 
-    const { ref, inView, entry } = useInView({});
     const [alreadyEntered, setAlreadyEntered] = useState(false);
 
-    useEffect(() => {
-        if (inView && !alreadyEntered && entry.intersectionRatio >= intersectionRatio) {
-            callback();
-            setAlreadyEntered(true);
+    const { ref } = useInView({
+        threshold: threshold,
+        onChange: (cur_inView, cur_entry) => {
+            console.log(cur_entry.intersectionRatio);
+            if (cur_inView && !alreadyEntered) {
+                callback();
+                setAlreadyEntered(true);
+            }
         }
-    }, [inView, alreadyEntered, callback, entry, intersectionRatio]);
+    });
 
     return ref;
 }

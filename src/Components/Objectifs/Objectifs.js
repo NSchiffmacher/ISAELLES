@@ -37,7 +37,7 @@ function Objectifs(props) {
 			transform: 'translateY(0px)',
 			opacity: 1
 		})
-	}, {threshold: (is_phone ? 0 : 0.7)});
+	}, {threshold: 0});
 	return (
 		<div ref={ props.inp_ref } className="objectifs">
 			<div className="left">

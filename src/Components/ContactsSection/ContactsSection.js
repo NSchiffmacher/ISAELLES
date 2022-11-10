@@ -43,7 +43,7 @@ function ContactsSection(props) {
             
         </div>
         
-        <SpanButton href={ urls.CONTACT_PAGE }>Nous contacter</SpanButton>
+        <SpanButton className="contact_btn" href={ urls.CONTACT_PAGE }>Nous contacter</SpanButton>
     </div>
   )
 }

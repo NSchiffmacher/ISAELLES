@@ -6,7 +6,7 @@ import SpanButton from '../LinkButton/LinkButton';
 import urls from '../../urls';
 import './ContactsSection.css';
 
-function ContactsSection() {
+function ContactsSection(props) {
   const [is_phone] = useState(
     window.innerWidth < 768 ? true : false
   );
@@ -17,7 +17,7 @@ function ContactsSection() {
 
   return (
     <div className="contacts_section">
-        <div className="logo">
+        <div className="logo" ref={ props.title_ref }>
             <img src="/images/logo_isaelles.svg" alt="isaelles logo" />
         </div>
         <div className="contacts">

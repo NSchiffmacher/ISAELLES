@@ -9,18 +9,34 @@ import ContactsSection from '../../Components/ContactsSection/ContactsSection';
 import Blob from '../../Components/Blob/Blob';
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
 
+import useIsPhone from '../../util/useIsPhone';
+import useAppearTransition from '../../util/useAppearTransition';
+
 import './HomePage.css';
 import '../../blobs.css';
 
 function HomePage(){
     // Used to check if the page is loaded on phone or not
-    const [is_phone] = useState(
-        window.innerWidth < 768 ? true : false
-    );
+    const is_phone = useIsPhone();
     
     const partners = useRef(null);
     const objectifs = useRef(null);
     const middle_blob = useRef(null);
+
+    // Animation for the pink blob in the bottom left
+    const [contact_blob_style, set_contact_blob_style] = useState({
+        transform: 'translateX(-200px) scale(0.4)',
+        opacity: 0,
+        transition: 'transform 0.4s ease-out, opacity 0.5s ease-out'
+    });
+    const contact_blob_ref = useAppearTransition(() => {
+        set_contact_blob_style({
+            ...contact_blob_style,
+            transform: 'translateX(0px)',
+            opacity: 1
+        });
+    }, {threshold: 0.01});
+
     // Gros blob deep blue sur le coté droit, à côté de la section "Nos objectifs" et "Nos partenaires"
     useEffect(() => {
         function inner() {
@@ -61,8 +77,9 @@ function HomePage(){
 
         <Partners inp_ref={ partners } />
         
-        <Blob className="bottom_blob_1 hidden_mobile" zIndex={0} src="/images/side_blobs/4.svg" />
-        <ContactsSection />
+
+        <Blob style={ contact_blob_style } className="bottom_blob_1 hidden_mobile" zIndex={0} src="/images/side_blobs/4.svg" />
+        <ContactsSection title_ref={ contact_blob_ref } />
     </div>);
 }
 export default HomePage;

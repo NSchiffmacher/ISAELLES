@@ -27,7 +27,7 @@ function ContactsSection(props) {
       transform: 'translateY(0px)',
       opacity: 1
     });
-  }, { threshold: 0.7 });
+  }, { threshold: is_phone ? 0.1 : 0.7 });
 
   return (
     <div className="contacts_section">

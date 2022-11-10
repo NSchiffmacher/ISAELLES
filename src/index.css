@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   position: relative;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 1250px){
   /* html {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   --isaelles-deep-blue: #2b2171;
   --isaelles-deep-blue-transparent: #2b217130;
   --isaelles-magenta: #a25ca1;

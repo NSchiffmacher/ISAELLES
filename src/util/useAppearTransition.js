@@ -14,7 +14,7 @@ const useAppearTransition = (callback, options = {}) => {
             callback();
             setAlreadyEntered(true);
         }
-    }, [alreadyEntered, inView, document.readyState])
+    }, [alreadyEntered, inView, callback])
 
     return ref;
 }

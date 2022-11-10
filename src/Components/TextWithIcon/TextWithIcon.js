@@ -11,7 +11,7 @@ function TextWithIcon(props) {
   const className = props.className + " text_with_icon " + (props.href ? " text_with_icon_link" : "");
 
   return (
-    <div onClick={onClick} className={className}>
+    <div style={ props.style } onClick={onClick} className={className}>
         <img className="text_with_icon_img" alt={props.children} src={props.icon} /> <span>{props.children}</span>
     </div>
   )

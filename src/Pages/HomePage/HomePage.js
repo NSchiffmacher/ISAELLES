@@ -32,21 +32,21 @@ function HomePage(){
     const contact_blob_ref = useAppearTransition(() => {
         set_contact_blob_style({
             ...contact_blob_style,
-            transform: 'translateX(-1px)',
+            transform: 'translateX(-1px) scale(1)',
             opacity: 1
         });
     }, {threshold: 0.01});
 
     // Animation for in big blob in the middle right
     const [middle_blob_style, set_middle_blob] = useState({
-        transform: 'translateX(200px)',
+        transform: 'translateX(200px) scale(1)',
         opacity: 0,
         transition: 'transform 0.4s ease-out, opacity 0.5s ease-out',
         transitionDelay: '0.2s'
     });
     const middle_blob_trigger = useAppearTransition(() => {
         set_middle_blob({
-            ...contact_blob_style,
+            ...middle_blob_style,
             transform: 'translateX(0px)',
             opacity: 1
         });

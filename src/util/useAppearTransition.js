@@ -1,18 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer';
 
 const useAppearTransition = (callback, options = {}) => {
     const [alreadyEntered, setAlreadyEntered] = useState(false);
 
-    const { ref } = useInView({
+    const { inView, ref } = useInView({
         ...options, 
-        onChange: (cur_inView, cur_entry) => {
-            if (!alreadyEntered && cur_inView && document.readyState === 'complete') {
-                callback();
-                setAlreadyEntered(true);
-            }
-        }
     });
+
+    useEffect(() => {
+        console.log('.')
+        if (!alreadyEntered && inView && document.readyState === 'complete') {
+            callback();
+            setAlreadyEntered(true);
+        }
+    }, [alreadyEntered, inView, document.readyState])
 
     return ref;
 }

@@ -26,7 +26,7 @@ function Hero() {
 
 			
 			<img onLoad={on_hero_banner_loaded} src="/images/hero_banner_crop.jpg" alt="hero banner" style={{display: (hero_banner_loaded ? 'block' : 'none')}} />
-			{ (!hero_banner_loaded) && <Skeleton width="100vw" style={{aspectRatio: 3.2, zIndex:-1}}/>}
+			{ (!hero_banner_loaded) && <Skeleton width="100vw" style={{aspectRatio: 3.78, zIndex:-1}}/>}
 
 
 		</div>

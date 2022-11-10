@@ -32,7 +32,22 @@ function HomePage(){
     const contact_blob_ref = useAppearTransition(() => {
         set_contact_blob_style({
             ...contact_blob_style,
-            transform: 'translateX(0px)',
+            transform: 'translateX(-1px)',
+            opacity: 1
+        });
+    }, {threshold: 0.01});
+
+    // Animation for in big blob in the middle right
+    const [middle_blob_style, set_middle_blob] = useState({
+        transform: 'translateX(200px)',
+        opacity: 0,
+        transition: 'transform 0.4s ease-out, opacity 0.5s ease-out',
+        transitionDelay: '0.2s'
+    });
+    const middle_blob_trigger = useAppearTransition(() => {
+        set_middle_blob({
+            ...contact_blob_style,
+            transform: 'translateX(-1px)',
             opacity: 1
         });
     }, {threshold: 0.01});
@@ -69,13 +84,13 @@ function HomePage(){
         <Hero/>
         
         <Blob className="main_top_blob_2 hidden_mobile" zIndex={0} src="/images/side_blobs/2.svg" />
-        <Blob inp_ref={ middle_blob } className="middle_right_blob" zIndex={0} src="/images/side_blobs/3.svg" />
+        <Blob style={ middle_blob_style } inp_ref={ middle_blob } className="middle_right_blob" zIndex={0} src="/images/side_blobs/3.svg" />
         
         <Objectifs inp_ref={ objectifs }/>
         <Blob className="main_top_blob_2 only_mobile" zIndex={0} src="/images/side_blobs/2.svg" />
         <Blob className="middle_left_blob_1 hidden_mobile" zIndex={0} src="/images/side_blobs/5.svg" />
 
-        <Partners inp_ref={ partners } />
+        <Partners inp_ref={ partners } middle_blob_trigger={ middle_blob_trigger }/>
         
 
         <Blob style={ contact_blob_style } className="bottom_blob_1 hidden_mobile" zIndex={0} src="/images/side_blobs/4.svg" />

@@ -23,11 +23,10 @@ function Partners(props) {
         });
     }, {threshold: 0.7});
 
-
     return (
         <div ref={props.inp_ref} className="partners">
             <div className="partenaires">
-                <h3>NOS PARTENAIRES</h3>
+                <h3 ref={ props.middle_blob_trigger }>NOS PARTENAIRES</h3>
                 <div className="partners_logo" ref={ logos_ref }>
                     {[
                         { src: '/images/logo_capgemini.png', alt: 'logo capgemini' },

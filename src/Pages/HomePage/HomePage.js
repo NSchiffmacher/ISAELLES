@@ -47,7 +47,7 @@ function HomePage(){
     const middle_blob_trigger = useAppearTransition(() => {
         set_middle_blob({
             ...contact_blob_style,
-            transform: 'translateX(-1px)',
+            transform: 'translateX(1px)',
             opacity: 1
         });
     }, {threshold: 0.01});

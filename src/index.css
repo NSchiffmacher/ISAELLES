@@ -56,6 +56,10 @@ body {
   color: var(--isaelles-magenta);
 }
 
+.page {
+  background-color: var(--isaelles-light-blue);
+  min-height: 100vh;
+}
 
 * {
   box-sizing: border-box;

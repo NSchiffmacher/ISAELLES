@@ -5,6 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Pages/HomePage/HomePage.js';
 import WhoPage from './Pages/WhoPage/WhoPage.js';
+import ActionsPage from './Pages/ActionsPage/ActionsPage';
+import NewsPage from './Pages/NewsPage/NewsPage';
+import ContactPage from './Pages/ContactPage/ContactPage';
 
 import urls from './urls';
 
@@ -17,6 +20,9 @@ root.render(
     <Routes>
       <Route path={ urls.HOME_PAGE } element={ <HomePage /> } />
       <Route path={ urls.WHO_PAGE } element={ <WhoPage /> } />
+      <Route path={ urls.ACTIONS_PAGE } element={ <ActionsPage /> } />
+      <Route path={ urls.NEWS_PAGE } element={ <NewsPage /> } />
+      <Route path={ urls.CONTACT_PAGE } element={ <ContactPage /> } />
       <Route path={ "test/persons" } element={ <TestImagePersons /> } />
     </Routes>
   </Router>

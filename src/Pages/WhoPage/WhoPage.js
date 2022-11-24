@@ -19,7 +19,7 @@ function WhoPage() {
     );
 
   return (
-    <div id="who_page" className="who_page">
+    <div id="who_page" className="page who_page">
         <ScrollToTop />
         
         <NavBar />

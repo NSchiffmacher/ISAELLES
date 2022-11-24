@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import NavBar from '../../Components/NavBar/NavBar';
 import LinkButton from '../../Components/LinkButton/LinkButton';
+import Subtitle from '../../Components/Subtitle/Subtitle';
 
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
 
@@ -22,6 +23,7 @@ function WhoPage() {
         <ScrollToTop />
         
         <NavBar />
+        <Subtitle>Qui sommes-nous ?</Subtitle>
 
         <h3>ISAELLES, Le club féministe de l'ISAE-SUPAERO</h3>
 

@@ -1,0 +1,14 @@
+.subtitle_banner {
+    background-color: var(--isaelles-white);
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.subtitle_banner .subtitle {
+    font-size: var(--isaelles-subtitle-font-size);
+}

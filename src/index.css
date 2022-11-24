@@ -24,6 +24,11 @@ body {
 
   --isaelles-cameo-pink: #e8b9cf;
   --isaelles-light-blue: #d6e2fa;
+  --isaelles-white: #fff;
+
+  --isaelles-subtitle-font-size: 1.5rem;
+  --isaelles-subtitle-font: 'Montserrat', serif;
+
 
 
   margin: 0;

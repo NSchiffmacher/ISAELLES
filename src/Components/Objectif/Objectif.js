@@ -7,7 +7,7 @@ import './Objectif.css';
 function Objectif(props) {
     return (
         <div className="objectif" style={ props.style }>
-            <SmallBlob content={ props.num }/>
+            <SmallBlob>{ props.num }</SmallBlob>
             <div className="objectif_texte">
                 <span>{props.children}</span>
             </div>

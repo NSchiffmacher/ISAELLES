@@ -60,6 +60,11 @@ body {
   background-color: var(--isaelles-light-blue);
   min-height: 100vh;
 }
+.page_wrap{
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
 
 * {
   box-sizing: border-box;

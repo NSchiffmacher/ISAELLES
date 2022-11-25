@@ -16,7 +16,7 @@ function Action(props) {
     <div className="action">
         <div className={right && !is_phone ? "action_title_wraper action_title_wraper_right" : "action_title_wraper"}>
             <div className="action_title">
-                <SmallBlob>-</SmallBlob>
+                <SmallBlob> &gt;</SmallBlob>
                 <div>{ parse(props.title) }</div>
             </div>
         </div>

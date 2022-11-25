@@ -5,6 +5,9 @@ import NavBar from '../../Components/NavBar/NavBar';
 import Subtitle from '../../Components/Subtitle/Subtitle';
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
 import Action from '../../Components/Action/Action';
+import LinkButton from '../../Components/LinkButton/LinkButton';
+
+import urls from '../../urls';
 
 // import useIsPhone from '../../util/useIsPhone';
 
@@ -96,8 +99,10 @@ function ActionsPage() {
                 <Action right={true} title={"Le Parcours<br/>Campus au Féminin"}>
                     <p>
                         Le Parcours est un projet initié en collaboration avec OSE (programme d'ouverture sociale de l'ISAE-SUPAERO) à destination des lycéennes et collégiennes. Il s'articule en plusieurs évènements au cours de l'année. Un-e étudiant-e et une ingénieure sont affiliées à un groupe d'une dizaine de lycéennes ou collégiennes.
+                        
                     </p>
                     <YouTube className="action_yt_video_wraper" opts={{width: "", height: "" , playerVars: {autoplay: 1, rel:0, controls:2, mute: 1, loop: 1}}} iframeClassName="action_yt_video" videoId="9G_6iRedItU"/>
+                    <LinkButton href={ urls.PARCOURS_PAGE } className="action_parcours_btn" >En savoir plus</LinkButton>
                 </Action>
 
                 <Action title="Nos actions sur le campus de l'Institut">

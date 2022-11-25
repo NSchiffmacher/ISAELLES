@@ -1,3 +1,6 @@
+.action {
+    margin-bottom: 1.5rem;
+}
 .action .action_title_wraper {
     display: flex;
     flex-direction: row;
@@ -21,9 +24,41 @@
     letter-spacing: 5px;
 }
 
-.action p {
+.action .action_content {
     color: var(--isaelles-deep-blue);
     font-size: 1.25rem;
     font-weight: 500;
     text-align: justify;
+}
+
+.action .action_gallery {
+    width: 75%;
+    margin: 2rem auto 0 auto;
+}
+
+.action .action_yt_video {
+    width: 80%;
+    aspect-ratio: 16/9 !important;
+    /* max-height: 70vh; */
+    /* width: 100%; */
+}
+
+.action .action_yt_video_wraper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .action .action_gallery {
+        width: 95%;
+    }
+    .action .action_yt_video {
+        width: 100%;
+    }
 }

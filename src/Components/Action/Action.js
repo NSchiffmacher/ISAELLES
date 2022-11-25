@@ -2,6 +2,7 @@ import React from 'react'
 import SmallBlob from '../../Components/SmallBlob/SmallBlob';
 
 import parse from "html-react-parser";
+import { Gallery } from "react-grid-gallery";
 
 import useIsPhone from '../../util/useIsPhone';
 
@@ -19,7 +20,14 @@ function Action(props) {
                 <div>{ parse(props.title) }</div>
             </div>
         </div>
-        { props.children }
+        <div className="action_content">
+            { props.children }
+        </div>
+        { props.images && 
+            <div className="action_gallery" style={ props.galleryStyle }>
+                <Gallery images={ props.images } enableImageSelection={false} rowHeight={250} margin={6} />
+            </div>
+        }
     </div>
     );
 }

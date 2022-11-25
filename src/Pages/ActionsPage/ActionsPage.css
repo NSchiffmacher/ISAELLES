@@ -1,29 +1,3 @@
-.actions_page .action .action_title_wraper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.actions_page .action .action_title_wraper_right {
-    margin-right: 2rem;
-    justify-content: right;
-}
-.actions_page .action .action_title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    margin-top: 1.75rem;
-    margin-bottom: 0.75rem;
-
-    font-size: 1.75rem;
-    font-weight: 400;
-
-    letter-spacing: 5px;
-}
-
-.actions_page .action p {
-    color: var(--isaelles-deep-blue);
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-align: justify;
+.action_parcours_btn {
+    margin: 2rem auto;
 }

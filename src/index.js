@@ -8,6 +8,7 @@ import WhoPage from './Pages/WhoPage/WhoPage.js';
 import ActionsPage from './Pages/ActionsPage/ActionsPage';
 import NewsPage from './Pages/NewsPage/NewsPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
+import ParcoursPage from './Pages/ParcoursPage/ParcoursPage';
 
 import urls from './urls';
 
@@ -23,6 +24,7 @@ root.render(
       <Route path={ urls.ACTIONS_PAGE } element={ <ActionsPage /> } />
       <Route path={ urls.NEWS_PAGE } element={ <NewsPage /> } />
       <Route path={ urls.CONTACT_PAGE } element={ <ContactPage /> } />
+      <Route path={ urls.PARCOURS_PAGE } element={ <ParcoursPage /> } />
       <Route path={ "test/persons" } element={ <TestImagePersons /> } />
     </Routes>
   </Router>

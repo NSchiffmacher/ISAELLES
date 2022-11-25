@@ -4,7 +4,8 @@ const urls = {
     WHO_PAGE        : "/who",
     CONTACT_PAGE    : "/contact",
     ACTIONS_PAGE    : "/actions",
-    NEWS_PAGE       : "/actu"
+    NEWS_PAGE       : "/actu",
+    PARCOURS_PAGE   : "/parcours"
 }
 
 export default urls;

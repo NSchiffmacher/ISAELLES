@@ -10,11 +10,12 @@ const useAppearTransition = (callback, options = {}) => {
 
     useEffect(() => {
         console.log('.')
-        if (!alreadyEntered && inView && document.readyState === 'complete') {
+        // if (!alreadyEntered && inView && document.readyState === 'complete') {
+        if (!alreadyEntered && inView   ) {
             callback();
             setAlreadyEntered(true);
         }
-    }, [alreadyEntered, inView, callback])
+    }, [alreadyEntered, inView, callback, ref])
 
     return ref;
 }

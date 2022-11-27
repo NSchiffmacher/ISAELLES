@@ -31,7 +31,7 @@ function WhoPage() {
             transform: 'translateY(0px)',
             opacity: 1
         });
-    }, {threshold: 0.1});
+    }, {threshold: 0.1, wait_for_load:true});
 
   return (
     <div id="who_page" className="page who_page">

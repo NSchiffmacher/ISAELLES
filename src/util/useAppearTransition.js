@@ -9,17 +9,17 @@ const useAppearTransition = (callback, options = {}) => {
         ...options, 
     });
 
-    function executeCallback(){
-        callback();
-        setAlreadyEntered(true);
-    }
-    function isPossible(){
-        return (!(wait_for_load && !(document.readyState === 'complete')));
-    }
-
     useEffect(() => {
         let run_animation = !alreadyEntered && inView;
         let set_interal_id = null;
+
+        function executeCallback(){
+            callback();
+            setAlreadyEntered(true);
+        }
+        function isPossible(){
+            return (!(wait_for_load && !(document.readyState === 'complete')));
+        }
         
         // console.log(!alreadyEntered && inView, !(wait_for_load && !(document.readyState === 'complete')))
         // if (!alreadyEntered && inView && document.readyState === 'complete') {

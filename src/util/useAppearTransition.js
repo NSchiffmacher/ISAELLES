@@ -23,23 +23,23 @@ const useAppearTransition = (callback, options = {}) => {
         
         // console.log(!alreadyEntered && inView, !(wait_for_load && !(document.readyState === 'complete')))
         // if (!alreadyEntered && inView && document.readyState === 'complete') {
-        console.log('hey', run_animation, isPossible())
+        // console.log('hey', run_animation, isPossible())
         if (run_animation) {
             if (isPossible()) {
                 executeCallback();
             } else if (set_interal_id == null) {
-                console.log("set interval")
+                // console.log("set interval")
                 set_interal_id = setInterval(() => {
                     if (isPossible){
                         executeCallback();
                         clearInterval(set_interal_id);
-                        console.log('clear  ')
+                        // console.log('clear  ')
                     } else {
-                        console.log('wait')
+                        // console.log('wait')
                     }   
-                }, 1);
+                }, 100);
             }
-            console.log('duh    ')
+            // console.log('done')
         }
     }, [alreadyEntered, inView, callback, ref, wait_for_load])
 

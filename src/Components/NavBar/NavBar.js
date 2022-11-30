@@ -20,9 +20,9 @@ function NavBar(){
             </div>
             <nav>
                 <NavLink href={ urls.WHO_PAGE }>Qui sommes-nous ?</NavLink>
-                <NavLink href={ urls.ACTIONS_PAGE } hidden_on_phone>Nos actions</NavLink>
+                <NavLink href={ urls.ACTIONS_PAGE }>Nos actions</NavLink>
                 <NavLink href={ urls.NEWS_PAGE } hidden_on_phone>Actualités</NavLink>
-                <NavLink href={ urls.CONTACT_PAGE }>Nous contacter</NavLink>
+                <NavLink href={ urls.CONTACT_PAGE } hidden_on_phone>Nous contacter</NavLink>
             </nav>
         </header>
         <div className="header_spacer"></div>

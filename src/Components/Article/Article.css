@@ -1,3 +1,4 @@
+
 .article {
     margin-bottom: 3rem;
 }
@@ -86,12 +87,27 @@
         width: 100%;
     }
     .article .article_content {
-        font-size: 1.15rem;
-        margin-top: 1.5rem;
-        line-height: 1.5rem; /* TOREMOVE ? */
+        font-size: 1.05rem;
+        margin-top: 2rem;
+        line-height: 1.75rem; /* TOREMOVE ? */
+    }
+    .article .article_title {
+        font-size: 1.50rem;
+    }
+    .article .article_title_substring {
+        font-size: 1.20rem;
     }
     .article .article_title .small_blob {
         width: 5rem !important;
         height: 5rem !important;
+    }
+    .article {
+        margin-bottom: 5rem;
+    }
+    .article .article_title_container {
+        margin-left: 0;
+    }
+    .page_wrap {
+        margin-top: 1.5rem !important;
     }
 }

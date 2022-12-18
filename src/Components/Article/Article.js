@@ -33,7 +33,7 @@ function Article(props) {
     <div className="article">
         <div className={right && !is_phone ? "article_title_wraper article_title_wraper_right" : "article_title_wraper"}>
             <div ref={ title_trigger_ref } className="article_title" style={ title_style }>
-                <SmallBlob> &gt;</SmallBlob>
+                {!is_phone && <SmallBlob> &gt;</SmallBlob>}
                 <div className="article_title_container">
                     <div className="article_title_string">{ parse(props.title) }</div>
                     <div className="article_title_substring">{ parse(subtitle) }</div>

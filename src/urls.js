@@ -1,10 +1,10 @@
 
 const urls = {
     HOME_PAGE       : "/",
-    WHO_PAGE        : "/who",
+    WHO_PAGE        : "/about",
     CONTACT_PAGE    : "/contact",
     ACTIONS_PAGE    : "/actions",
-    NEWS_PAGE       : "/actu",
+    NEWS_PAGE       : "/news",
     PARCOURS_PAGE   : "/parcours"
 }
 

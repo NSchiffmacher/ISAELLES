@@ -18,6 +18,7 @@ function NewsPage() {
             title  = { data.caps_title ? data.title.toUpperCase() : data.caps_title   }
             place  = { data.caps_sub   ? data.place.toUpperCase() : data.place        }
             date   = { data.caps_sub   ? data.date.toUpperCase()  : data.date        }
+            right  = { data.lock_right }
             images = { data.images  }>
 
             { data.content }

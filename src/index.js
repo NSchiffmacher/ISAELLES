@@ -25,7 +25,7 @@ root.render(
       <Route path={ urls.NEWS_PAGE } element={ <NewsPage /> } />
       <Route path={ urls.CONTACT_PAGE } element={ <ContactPage /> } />
       <Route path={ urls.PARCOURS_PAGE } element={ <ParcoursPage /> } />
-      <Route path={ "test/persons" } element={ <TestImagePersons /> } />
+      <Route path={ urls.TEST_PERSONS } element={ <TestImagePersons /> } />
     </Routes>
   </Router>
 );

@@ -5,6 +5,7 @@ const urls = {
     CONTACT_PAGE    : "/contact",
     ACTIONS_PAGE    : "/actions",
     NEWS_PAGE       : "/news",
+    TEST_PERSONS    : "/tests/person",
     PARCOURS_PAGE   : "/parcours"
 }
 

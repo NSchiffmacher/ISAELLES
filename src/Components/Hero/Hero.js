@@ -17,7 +17,7 @@ function Hero() {
 				<div className="hero_inner_transition">
 				<div className="hero_logo"><img src="/images/logo_isaelles.svg" alt="hero logo"/></div>
 				<div className="hero_catch_phrase">
-					<span className="color-deep-blue">#Sciences</span>  
+					<span className="color-deep-blue">#Science</span>  
 					<span className="color-magenta">Deserves</span>  
 					<span className="color-pink">Girls</span>  
 				</div>            
